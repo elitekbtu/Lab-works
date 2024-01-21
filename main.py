@@ -1,2 +1,2 @@
-print("welcome to  lab works pp2")
+print("welcome to lab works pp2")
 
