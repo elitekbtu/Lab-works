@@ -17,3 +17,5 @@ for x in fruits:
   if x == "banana":
     break
   print(x)
+
+#lab 2 end
