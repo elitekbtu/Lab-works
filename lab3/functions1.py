@@ -123,6 +123,45 @@ def palindrom(strings):
         print("YES")
     else:
         print("NO")
+
 palindrom("madam")
 palindrom("qazaq")
 palindrom("result")
+
+
+
+def histogram(arr):
+    for i in arr:
+        print("*"*i)
+histogram([1,2,3,4,5,6])
+
+
+
+from random import randint
+
+def guessanumber():
+    print("Hello! What is your name?")
+    name = input()
+    print(f"Well, {name}, I am thinking of a number between 1 and 20.")
+    number = randint(1,20)
+    sum = 0
+    run = True
+    while run:
+        guess = int(input("Take a guess: "))
+        sum+=1
+        if guess == number:
+            run = False
+            print(f"Good job, {name}! You guessed my number in {sum} guesses!")
+            break
+        if guess>number:
+            print("Your guess is too high.")
+        else:
+            print("Your guess is too low")
+
+
+guessanumber()
+
+def randomator(start, end, length):
+    arr=[randint(start, end)for i in range(length)]
+    print(arr)
+randomator(1,10,10)
