@@ -76,4 +76,53 @@ has33([1,3,3])
 has33([1, 3, 1, 3])
 has33([3, 1, 3])
 
+print('\n')
 
+def order007(arr):
+    result = []
+    for i in arr:
+        if i==0 or i==7:
+            result.append(i)
+    
+    flag =  False
+    for i in range(len(result)-2):
+        if result[i]==result[i+1] and result[i]==0 and result[i+2]==7:
+            flag = True
+        
+    if flag:
+        print("True")
+    else:
+        print("False")
+
+order007([1,2,4,0,0,7,5])
+order007([1,0,2,4,0,5,7])
+order007([1,7,2,0,4,5,0])
+
+def volume(r):
+    pi = 3.1415
+    r=4/3*r**3*pi
+    print(r)
+
+volume(3)
+
+
+def _unique(arr):
+    result = []
+    for i in arr:
+        if arr.count(i)==1:
+            result.append(i)
+    print(result)
+
+
+_unique([1,2,4,0,0,7,5])
+_unique([1,2,5,7,4,5,4,2,9])
+
+
+def palindrom(strings):
+    if strings==strings[::-1]:
+        print("YES")
+    else:
+        print("NO")
+palindrom("madam")
+palindrom("qazaq")
+palindrom("result")
