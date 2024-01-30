@@ -115,3 +115,26 @@ print(bank.deposit(1000))
 print(bank.withdraw(3000))
 
 print(bank.withdraw(2000))
+
+ 
+
+class Prime:
+    def __init__(self, numbers):
+        self.numbers = numbers
+
+    def is_prime(self, num):
+        if num < 2:
+            return False
+        for i in range(2, int(num**0.5) + 1):
+            if num % i == 0:
+                return False
+        return True
+
+    def filter_prime_numbers(self):
+        return list(filter(lambda x: self.is_prime(x), self.numbers))
+
+
+
+numbers = [2, 3, 5, 8, 13, 15, 17, 20, 23, 29]
+prime_filter = Prime(numbers)
+print(prime_filter.filter_prime_numbers())
