@@ -1,1 +1,0 @@
-print("Hello to pp2 lab 5")
