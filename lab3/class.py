@@ -32,7 +32,6 @@ class Square(Shape):
 
 square = Square(5, 7)
 
-
 print(square.area())
 
 print(square.rectangle())
