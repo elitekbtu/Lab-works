@@ -29,6 +29,23 @@ def palindrom(some_s):
         return f"the word {some_s} isn't palindrom"
     
 
+def squareroot():
+    import math
+    x = int(input("Input the value: "))
+    y = int(input("Input the miliseconds: "))
+
+    return f"Square root of {x} after {y} miliseconds is {math.sqrt(x)}"
+    
+
+def all_true_elements(tuple_data):
+    boolean =  True
+    for i in tuple_data:
+        if i != True:
+            boolean = False
+
+    if boolean:
+        return True
+    else:
+        return f"elements of tuple is different"
 
 
-        
