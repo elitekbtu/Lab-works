@@ -97,3 +97,22 @@ def copier():
     return 0
 
 copier()
+
+#task  8
+
+def delete_file(path):
+    if os.path.exists(path):
+        if os.access(path, os.W_OK):
+            try:
+                os.remove(path)
+                print(f"Файл '{path}' успешно удален.")
+            except Exception as e:
+                print(f"Ошибка при удалении файла: {e}")
+            else:
+                print("The file deleted")
+        else:
+            print(f"Отсутствует право на запись в файл '{path}'.")
+    else:
+        print(f"Файл '{path}' не существует.")
+
+delete_file(r"C:\Users\Турарбек\Documents\Lab pp2\lab6\Z.txt")
