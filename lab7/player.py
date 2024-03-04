@@ -98,5 +98,3 @@ while run:
       
       clock.tick(fps)
       pygame.display.update()
-
-
