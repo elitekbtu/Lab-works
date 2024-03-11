@@ -15,7 +15,7 @@ barder = pygame.Color(255,255,255)
 
 display2 = pygame.Surface((450,600))
 display2.fill(barder)
-icon = pygame.image.load(r"racerelements\car1.png")
+icon = pygame.image.load(r"racerelements\car.png")
 pygame.display.set_icon(icon)
 
 background = pygame.image.load(r"racerelements\background.png")
